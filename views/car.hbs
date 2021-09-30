@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-md-12">
+        <h2>{{viewData.car.carMake}} - Car: {{viewData.car.carId}}</h2>
+        <hr />
+        <form method="post" action="/car/update">
+            <input type="hidden" name="carId" value="{{viewData.car.carId}}" />
+            <fieldset>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="carMake">Car Make:</label>
+                            <input class="form-control" id="carMake" name="carMake" type="text" value="{{viewData.car.carMake}}" />
+                        </div>
+                    </div>
+                </div>
+                 <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="carModel">Car Model:</label>
+                                <input class="form-control" id="carModel" name="carModel" type="text" value="{{viewData.car.carModel}}" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="carYear">Car Year:</label>
+                                <input class="form-control" id="carYear" name="carYear" type="number" value="{{viewData.car.carYear}}" />
+                            </div>
+                        </div>
+                    </div> 
+            </fieldset>
+            <fieldset>
+                    <legend>Vin Information</legend>
+                    <div class="row">
+                       <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="vin">Vin:</label>
+                                <input class="form-control" id="vin" name="vin" type="text" value="{{viewData.car.vin}}" />
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            <hr />
+            <input type="submit" class="btn btn-primary pull-right" value="Update Car" /><br /><br /><br />
+        </form>
+    </div>
+</div>

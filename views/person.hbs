@@ -1,0 +1,57 @@
+<div class="row">
+    <div class="col-md-12">
+        <h2>{{viewData.person.firstName}} {{viewData.person.lastName}} - Person: {{viewData.person.peopleNum}}</h2>
+        <hr />
+        <form method="post" action="/person/update">
+            <input type="hidden" name="peopleNum" value="{{viewData.person.peopleNum}}" />
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="firstName">First Name:</label>
+                            <input class="form-control" id="firstName" name="firstName" type="text" value="{{viewData.person.firstName}}" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="lastName">Last Name:</label>
+                            <input class="form-control" id="lastName" name="lastName" type="text" value="{{viewData.person.lastName}}" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input class="form-control" id="phone" name="phone" type="number" value="{{viewData.person.phone}}" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="addressStreet">Address (Street):</label>
+                            <input class="form-control" id="addressStreet" name="addressStreet" type="text" value="{{viewData.person.addressStreet}}" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="addressCity">Address (City):</label>
+                            <input class="form-control" id="addressCity" name="addressCity" type="text" value="{{viewData.person.addressCity}}" />
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Car Information</legend>
+                    <div class="row">
+                       <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="vin">Vin:</label>
+                                <input class="form-control" id="vin" name="vin" type="text" value="{{viewData.person.vin}}" />
+                            </div>
+                        </div>
+                    </div>
+          </fieldset>
+            <hr />
+            <input type="submit" class="btn btn-primary pull-right" value="Update Person" /><br /><br /><br />
+        </form>
+    </div>
+</div>

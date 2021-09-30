@@ -1,0 +1,66 @@
+      <div class="row">
+        <div class="col-md-12">
+        
+            <h2>Add People</h2>
+
+            <br />
+    
+            <form method="post" action="/people/add">
+    
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="firstName">First Name:</label>
+                                <input class="form-control" id="firstName" name="firstName" type="text" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="last_name">Last Name:</label>
+                                <input class="form-control" id="lastName" name="lastName" type="text"  />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                       <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="phone">Phone:</label>
+                                <input class="form-control" id="phone" name="phone" type="number"  />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="addressStreet">Address (Street):</label>
+                                <input class="form-control" id="addressStreet" name="addressStreet" type="text"  />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="addressCity">Address (City):</label>
+                            <input class="form-control" id="addressCity" name="addressCity" type="text"  />
+                        </div>
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Car Information</legend>
+                    <div class="row">
+                       <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="vin">Vin:</label>
+                                <input class="form-control" id="vin" name="vin" type="text"  />
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+    
+                <hr />
+    
+                <input type="submit" class="btn btn-primary pull-right" value="Add Person" /><br /><br /><br />
+    
+            </form>
+        </div>
+      </div>
